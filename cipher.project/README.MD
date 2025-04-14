@@ -1,25 +1,22 @@
-# Caesar Cipher Encoder
+# Cipher Analysis Tool
 
-## Overview
-
-The Caesar Cipher Encoder is a Python script that encrypts text using the Caesar cipher. The script reads plaintext from an input file (`input_file.txt`), encodes it with a specified shift value, and writes the encrypted text to an output file (`encoded_file.txt`). The Caesar cipher shifts each letter in the plaintext by a fixed number of positions down the alphabet.
+## Project Overview
+This tool decrypts various types of classical ciphers (Caesar, Vigenère, and Transposition) from ASCII text files into readable plaintext. Originally developed to solve academic cryptography challenges without prior knowledge of cipher-breaking techniques.
 
 ## Features
+- **Multiple Cipher Support**: Decrypts Caesar, Vigenère, and Transposition ciphers
+- **Automated Analysis**: Detects cipher type and attempts breaking without prior knowledge
+- **Frequency Analysis**: Uses statistical patterns in English text for decryption
+- **File Processing**: Works with ASCII text files for input and output
 
-- **File-Based Input/Output**: Reads plaintext from a file and writes the encoded text to another file.
-- **Customizable Shift**: Allows the user to specify the shift value for encryption.
-- **Error Handling**: Handles cases where the input file is missing or the shift value is invalid.
-
-## Installation
-
-### Prerequisites
-
+## Technologies Used
 - Python 3.x
+- Statistical analysis libraries
+- File I/O handling
+- Cryptographic algorithms
 
-### Cloning the Repository
+## Usage Examples
 
-Clone the repository using Git:
-
+### Basic Usage
 ```bash
-git clone https://github.com/yourusername/caesar-cipher-encoder.git
-cd caesar-cipher-encoder
+python cipher_analyzer.py --input encrypted.txt --output decrypted.txt
